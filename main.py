@@ -7,19 +7,19 @@ Sintija Norkārkle, RDCPO, 1. grupa
 def SiftDown(i, heap):
     indekss = i
     kreisais_b = 2 * i + 1
-    right_ch = 2 * i + 2
+    labais_b = 2 * i + 2
 
-    if left_ch < len(heap):
-        if heap[indekss][1] > heap[left_ch][1]:
-            indekss = left_ch
-        elif heap[indekss][1] == heap[left_ch][1] and heap[indekss][0] > heap[left_ch][0]:
-            indekss = left_ch
+    if kreisais_b < len(heap):
+        if heap[indekss][1] > heap[kreisais_b][1]:
+            indekss = kreisais_b
+        elif heap[indekss][1] == heap[kreisais_b][1] and heap[indekss][0] > heap[kreisais_b][0]:
+            indekss = kreisais_b
     
-    if right_ch < len(heap):
-        if heap[indekss][1] > heap[right_ch][1]:
-            indekss = right_ch
-        elif heap[indekss][1] == heap[right_ch][1] and heap[indekss][0] > heap[right_ch][0]:
-            indekss = right_ch
+    if labais_b < len(heap):
+        if heap[indekss][1] > heap[labais_b][1]:
+            indekss = labais_b
+        elif heap[indekss][1] == heap[labais_b][1] and heap[indekss][0] > heap[labais_b][0]:
+            indekss = labais_b
 
     if indekss != i:
         heap[i], heap[indekss] = heap[indekss], heap[i]

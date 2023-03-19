@@ -65,7 +65,5 @@ def main():
     
     # TODO: print out the results, each pair in it's own line
 
-
-
 if __name__ == "__main__":
     main()
